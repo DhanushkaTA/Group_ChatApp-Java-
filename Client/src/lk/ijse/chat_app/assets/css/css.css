@@ -1,0 +1,43 @@
+/*.sp_main{*/
+/*    -fx-background-image: url(../assets/img/whatsapp-chat-doodle-patterns-jyd5uvep2fdwjl97.jpg);*/
+/*}*/
+
+.vox{
+    -fx-background-color: transparent;
+}
+
+.scroll-pane .viewport {
+    -fx-background-image: url(../img/whatsapp-chat-doodle-patterns-jyd5uvep2fdwjl97.jpg) ;
+
+}
+
+.login_tf{
+    -fx-text-fill: linear-gradient(to right,#DC1D9D,#F03D7E,#F24774,#F34E70,#F9665F,#FC795B,#FF8C5F);
+    -fx-border-color: #DC1D9D;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+}
+
+.label{
+    -fx-text-fill: linear-gradient(to right,#DC1D9D,#F03D7E,#F24774,#F34E70,#F9665F,#FC795B,#FF8C5F);
+}
+
+.button_close{
+    -fx-text-fill: #ffff;
+    -fx-cursor: hand;
+}
+
+.button_close:hover{
+    -fx-background-color: #FF1028;
+    -fx-text-fill: #ffff;
+}
+
+.button_minimize{
+    -fx-text-fill: #ffff;
+    -fx-cursor: hand;
+}
+
+.button_minimize:hover{
+    -fx-background-color: #477FBA;
+    -fx-text-fill: #ffff;
+}

@@ -1,0 +1,24 @@
+.login_btn{
+    -fx-cursor: hand;
+    -fx-background-color: #F03D7E;
+    -fx-background-radius: 20px;
+}
+
+.login_btn:hover{
+    -fx-background-color: linear-gradient(to left,#DC1D9D,#F03D7E,#F24774,#F34E70,#F9665F,#FC795B,#FF8C5F);
+}
+
+.btn_cl{
+    -fx-background-color: rgba(255, 255, 255, 0.5);
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+}
+.btn_cl:hover{
+    -fx-background-color: rgb(255, 255, 255);
+    -fx-text-fill: black;
+}
+
+.btn_back{
+    -fx-text-fill: white;
+    -fx-cursor: hand;
+}

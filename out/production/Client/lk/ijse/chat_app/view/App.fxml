@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="context" prefHeight="634.0" prefWidth="383.0" style="-fx-background-color: #128C7E;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.chat_app.controller.AppController">
+   <children>
+      <ScrollPane fx:id="sp_main" layoutX="14.0" layoutY="64.0" prefHeight="517.0" prefWidth="356.0" stylesheets="@../assets/css/css.css">
+         <content>
+            <VBox fx:id="vbox_message" prefHeight="515.0" prefWidth="340.0" />
+         </content>
+      </ScrollPane>
+      <TextField fx:id="txt_message" layoutX="57.0" layoutY="589.0" onAction="#txt_messageOnAction" prefHeight="33.0" prefWidth="271.0" />
+      <JFXButton fx:id="btn_sent" alignment="CENTER" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" layoutX="333.0" layoutY="590.0" onAction="#btn_sentOnAction" prefHeight="33.0" prefWidth="39.0" style="-fx-background-color: #075E54; -fx-background-radius: 150px;" text=" ">
+         <graphic>
+            <FontAwesomeIconView fill="WHITE" glyphName="SEND" size="20.0" />
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></JFXButton>
+      <JFXButton fx:id="btn_sent_V" alignment="CENTER" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" layoutX="13.0" layoutY="590.0" onAction="#btn_sent_VOnAction" prefHeight="33.0" prefWidth="39.0" style="-fx-background-color: #075E54; -fx-background-radius: 150px;" text=" ">
+         <graphic>
+            <FontAwesomeIconView fill="WHITE" glyphName="CAMERA" size="20.0" />
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Pane fx:id="header_pane" prefHeight="25.0" prefWidth="383.0" style="-fx-background-color: #031D1A;">
+         <children>
+            <Label fx:id="lblUsername" layoutX="5.0" layoutY="3.0" prefHeight="17.0" prefWidth="247.0" text="Group Chat" textFill="WHITE">
+               <font>
+                  <Font name="Calibri Bold" size="13.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="btn_wClose" layoutX="358.0" onAction="#btn_wCloseOnAction" styleClass="button_close" stylesheets="@../assets/css/css.css" text="X" />
+            <JFXButton fx:id="btn_Minimized" layoutX="334.0" onAction="#btn_MinimizedOnAction" styleClass="button_minimize" stylesheets="@../assets/css/css.css" text="_" />
+         </children>
+      </Pane>
+      <Pane fx:id="pane_imageSent" layoutX="9.0" layoutY="37.0" prefHeight="592.0" prefWidth="363.0" style="-fx-background-color: black;">
+         <children>
+            <JFXButton fx:id="btn_Close" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" layoutX="3.0" layoutY="15.0" onAction="#btn_CloseONAction" styleClass="btn_back" stylesheets="@../assets/css/btn.css" text=" " textAlignment="CENTER" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <FontAwesomeIconView fill="#075e54" glyphName="REPLY" size="18" />
+               </graphic>
+            </JFXButton>
+            <ImageView fx:id="imgViewer" fitHeight="425.0" fitWidth="296.0" layoutX="36.0" layoutY="92.0" pickOnBounds="true" preserveRatio="true">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <Label alignment="CENTER" layoutX="82.0" layoutY="18.0" prefHeight="17.0" prefWidth="200.0" text="Image viwer" textAlignment="CENTER" textFill="#33ffde">
+               <font>
+                  <Font name="Calibri Bold" size="20.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="btn_sentImage" alignment="CENTER" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" layoutX="189.0" layoutY="545.0" onAction="#btn_sentImageOnAction" prefHeight="33.0" prefWidth="118.0" style="-fx-background-color: #075E54; -fx-background-radius: 150px;" text=" ">
+               <graphic>
+                  <FontAwesomeIconView fill="WHITE" glyphName="SEND" size="20.0" />
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton fx:id="btn_fileChooser" alignment="CENTER" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" layoutX="51.0" layoutY="545.0" onAction="#btn_fileChooserOnAction" prefHeight="33.0" prefWidth="118.0" style="-fx-background-color: white; -fx-background-radius: 150px;" text=" ">
+               <graphic>
+                  <FontAwesomeIconView fill="#075e54" glyphName="FILE" size="20.0" />
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton fx:id="btn_Cancel" layoutX="318.0" layoutY="76.0" onAction="#btn_CancelONAction" styleClass="btn_cl" stylesheets="@../assets/css/btn.css" text="X" textAlignment="CENTER" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Calibri Bold" size="14.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
